@@ -1,0 +1,16 @@
+﻿spring: 
+	profiles: 
+		actice: 
+		- dev
+
+---
+spring:
+	profiles:	dev
+	application:
+		name: micro-config-dev
+
+---
+spring:
+	profiles:	test
+	application:
+		name: micro-config-test
