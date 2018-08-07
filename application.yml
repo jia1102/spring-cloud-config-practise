@@ -13,4 +13,4 @@ spring:
 spring:
  profiles: test
  application:
- name: micro-config-test
+  name: micro-config-test
