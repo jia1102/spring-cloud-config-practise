@@ -1,0 +1,31 @@
+﻿spring: 
+ profiles: 
+  actice: 
+   - dev
+
+---
+server:
+ port: 10000
+ 
+spring:
+ profiles: dev
+ application:
+  name: micro-config-client
+
+eureka:
+ client:
+  service-url: 
+   defaultZone: http://Eureka7000:7000/eureka/,http://Eureka7001:7001/eureka/,http://Eureka7002:7002/eureka/
+---
+server:
+ port: 10100
+ 
+spring:
+ profiles: test
+ application:
+  name: micro-config-test
+
+eureka:
+ client:
+  service-url: 
+   defaultZone: http://Eureka7000:7000/eureka/,http://Eureka7001:7001/eureka/,http://Eureka7002:7002/eureka/
