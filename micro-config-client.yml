@@ -1,7 +1,7 @@
 ﻿spring: 
  profiles: 
   actice: 
-   - dev
+   - test
 
 ---
 server:
@@ -28,7 +28,7 @@ server:
 spring:
  profiles: test
  application:
-  name: micro-config-test
+  name: micro-config-client
 
 eureka:
  client:
